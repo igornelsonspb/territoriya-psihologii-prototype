@@ -266,7 +266,7 @@ img {
 
 .back-link {
   position: sticky;
-  top: 16px;
+  top: 0;
   z-index: 20;
   display: flex;
   width: 100%;
