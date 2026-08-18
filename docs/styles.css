@@ -272,9 +272,9 @@ img {
   width: 100%;
   align-items: center;
   gap: 12px;
-  margin: 24px 0 0;
-  padding: 0;
-  border-radius: 12px;
+  margin: 0;
+  padding: 16px;
+  border-radius: 0;
   background: var(--bg);
   font-size: 16px;
   color: var(--text);
@@ -716,8 +716,7 @@ img {
   /* Article page */
 
   .back-link {
-    margin: 16px 0 0;
-    padding: 16px;
+    margin: 0;
   }
 
   .article-header {
