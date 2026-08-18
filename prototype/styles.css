@@ -98,6 +98,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
+  transition: color 0.15s ease;
 }
 
 .header-menu-items a.active {
@@ -110,6 +111,14 @@ img {
 
 .article-page .header-menu-items a.active {
   color: var(--blue-dark);
+}
+
+.header-menu-items a:hover {
+  color: var(--blue);
+}
+
+.article-page .header-menu-items a.active:hover {
+  color: var(--blue);
 }
 
 .social-icons {
@@ -256,12 +265,19 @@ img {
   gap: 12px;
   padding: 24px 0 0;
   font-size: 16px;
+  color: var(--text);
   cursor: pointer;
+  transition: color 0.15s ease;
 }
 
-.back-link img {
+.back-link:hover {
+  color: var(--blue);
+}
+
+.back-link svg {
   width: 24px;
   height: 24px;
+  display: block;
 }
 
 /* Articles grid */
@@ -269,7 +285,7 @@ img {
 .articles {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 80px;
   padding: 0 0 60px;
 }
 
@@ -604,7 +620,7 @@ img {
 
   .secondary-menu {
     gap: 24px;
-    padding: 16px 20px;
+    padding: 24px 20px;
     margin: 0 -20px;
     width: auto;
     overflow-x: auto;
