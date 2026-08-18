@@ -289,7 +289,7 @@ img {
 }
 
 .card:hover .card-title {
-  opacity: 0.85;
+  color: var(--blue);
 }
 
 .card.card-narrow {
@@ -333,11 +333,6 @@ img {
 .row-main .card-title {
   font-size: 30px;
   font-weight: 500;
-}
-
-.card-link:hover .card-title {
-  color: var(--blue);
-  opacity: 1;
 }
 
 /* Pagination */
