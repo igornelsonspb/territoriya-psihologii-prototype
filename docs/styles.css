@@ -250,9 +250,12 @@ img {
 .secondary-menu {
   display: flex;
   gap: 40px;
-  padding: 32px 0;
   font-weight: 600;
   font-size: 18px;
+}
+
+.secondary-menu.container {
+  padding: 32px 0;
 }
 
 .secondary-menu a.active {
@@ -265,11 +268,12 @@ img {
   position: sticky;
   top: 16px;
   z-index: 20;
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   align-items: center;
   gap: 12px;
   margin: 24px 0 0;
-  padding: 16px;
+  padding: 0;
   border-radius: 12px;
   background: var(--bg);
   font-size: 16px;
@@ -306,7 +310,6 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 19px;
   flex: 1;
   min-width: 0;
   cursor: pointer;
@@ -341,12 +344,14 @@ img {
 .card-author {
   font-size: 18px;
   font-weight: 400;
+  margin-top: 16px;
 }
 
 .card-title {
   font-size: 25px;
   font-weight: 500;
   line-height: 1.3;
+  margin-top: 12px;
   transition: color 0.15s ease, opacity 0.15s ease;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -626,7 +631,7 @@ img {
     display: flex;
   }
 
-  .secondary-menu {
+  .secondary-menu.container {
     gap: 24px;
     padding: 20px 20px 0;
     margin: 0 -20px;
@@ -654,8 +659,12 @@ img {
     gap: 56px;
   }
 
-  .card {
-    gap: 12px;
+  .card-author {
+    margin-top: 12px;
+  }
+
+  .card-title {
+    margin-top: 12px;
   }
 
   .card.card-narrow,
@@ -708,6 +717,7 @@ img {
 
   .back-link {
     margin: 16px 0 0;
+    padding: 16px;
   }
 
   .article-header {
