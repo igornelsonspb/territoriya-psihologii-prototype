@@ -620,12 +620,14 @@ img {
 
   .secondary-menu {
     gap: 24px;
-    padding: 24px 20px;
+    padding: 20px 20px 0;
     margin: 0 -20px;
     width: auto;
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent 100%);
+    mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent 100%);
   }
 
   .secondary-menu::-webkit-scrollbar {
@@ -635,13 +637,13 @@ img {
   /* Articles grid -> single column */
 
   .articles {
-    gap: 32px;
-    padding: 32px 0;
+    gap: 56px;
+    padding: 40px 0 32px;
   }
 
   .row {
     flex-direction: column;
-    gap: 32px;
+    gap: 56px;
   }
 
   .card {
